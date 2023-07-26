@@ -1,5 +1,11 @@
 function hiendsHoaDon() {
   const cn = sessionStorage.getItem("cn");
+  const tenChiNhanhElement = document.getElementById("tenChiNhanh");
+  tenChiNhanhElement.innerText = cn;
+
+  const nv = JSON.parse(sessionStorage.getItem("nv"));
+  const tennvElement = document.getElementById("tennv");
+  tennvElement.innerText = nv[0];
   $(document).ready(function () {
     let table = $("#example").DataTable({
       ajax: {
