@@ -10,7 +10,7 @@ async function hienThiTatCaBanHang() {
   const tenElement = document.getElementById("tenNhanVien");
   tenElement.value = nv[0];
   try {
-    const response = await fetch(`https://fontenduser.vercel.app/qlnt/kho/${cn}`);
+    const response = await fetch(`https://backend-flame-nine.vercel.app/qlnt/kho/${cn}`);
     const data = await response.json();
     console.log(data);
     const container = document.getElementById("container-banhang");

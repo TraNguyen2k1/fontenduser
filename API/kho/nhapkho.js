@@ -7,7 +7,7 @@ function hienDSThuocPN() {
   $(document).ready(function () {
       let table = $("#example").DataTable({
         ajax: {
-          url: `https://fontenduser.vercel.app/qlnt/phieunhap/${cn}`,
+          url: `https://backend-flame-nine.vercel.app/qlnt/phieunhap/${cn}`,
           dataSrc: "",
         },
         columns: [
@@ -77,7 +77,7 @@ function hienDSThuocPN() {
       var data = table.row(this).data();
       const tableBody = document.getElementById("chitiet_pn");
       tableBody.innerHTML = "";
-      fetch(`https://fontenduser.vercel.app/qlnt/phieunhap/ct/${cn}/${data.soPhieuNhap}`)
+      fetch(`https://backend-flame-nine.vercel.app/qlnt/phieunhap/ct/${cn}/${data.soPhieuNhap}`)
         .then((response) => response.json())
         .then((data) => {
           for (let i = 0; i < data.length; i++) {
@@ -208,7 +208,7 @@ function addPhieuNhap() {
       }
     });
     if (flag == true) {
-      fetch("https://fontenduser.vercel.app/qlnt/phieunhap/addPN", {
+      fetch("https://backend-flame-nine.vercel.app/qlnt/phieunhap/addPN", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

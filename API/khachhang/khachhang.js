@@ -8,7 +8,7 @@ function hienKhachHang(){
   
      const queryString = new URLSearchParams(params).toString();
   
-     fetch(`https://fontenduser.vercel.app/qlnt/khach/?${queryString}`)
+     fetch(`https://backend-flame-nine.vercel.app/qlnt/khach/?${queryString}`)
         .then(response => response.json())
         .then(data => {
            const list = document.getElementById('myULSDT');
@@ -62,8 +62,8 @@ function chonSDT() {
 hienKhachHang();
 
 
-// Sử dụng phương thức fetch để tải danh sách các nhà sản xuất từ địa chỉ URL 'https://fontenduser.vercel.app/qlnt/khach/'
-fetch('https://fontenduser.vercel.app/qlnt/khach/')
+// Sử dụng phương thức fetch để tải danh sách các nhà sản xuất từ địa chỉ URL 'https://backend-flame-nine.vercel.app/qlnt/khach/'
+fetch('https://backend-flame-nine.vercel.app/qlnt/khach/')
   // Chuyển đổi kết quả trả về thành một đối tượng JavaScript bằng phương thức json()
   .then(response => response.json())
   // Lưu trữ danh sách các nhà sản xuất vào biến listItems

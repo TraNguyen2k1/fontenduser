@@ -43,7 +43,7 @@ function luuHoaDon() {
       });
       if(flag==true){
         console.log(data);
-      fetch("https://fontenduser.vercel.app/qlnt/hoadon/addHD", {
+      fetch("https://backend-flame-nine.vercel.app/qlnt/hoadon/addHD", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

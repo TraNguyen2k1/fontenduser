@@ -10,7 +10,7 @@ function hienFormThuocHetHan() {
   function hiendsGHH(){
     const cn = sessionStorage.getItem("cn");
     $.ajax({
-      url: `https://fontenduser.vercel.app/qlnt/kho/ghh/${cn}`,
+      url: `https://backend-flame-nine.vercel.app/qlnt/kho/ghh/${cn}`,
       method: "GET",
       dataType: "json",
       success: function (data) {

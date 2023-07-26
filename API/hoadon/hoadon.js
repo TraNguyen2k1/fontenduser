@@ -3,7 +3,7 @@ function hiendsHoaDon() {
   $(document).ready(function () {
     let table = $("#example").DataTable({
       ajax: {
-        url: `https://fontenduser.vercel.app/qlnt/hoadon/${cn}`,
+        url: `https://backend-flame-nine.vercel.app/qlnt/hoadon/${cn}`,
         dataSrc: "",
       },
       columns: [
@@ -72,7 +72,7 @@ function hiendsHoaDon() {
       var data = table.row(this).data();
       const tableBody = document.getElementById("chitiet_hd");
       tableBody.innerHTML = "";
-      fetch(`https://fontenduser.vercel.app/qlnt/hoadon/ct/${data.soHoaDon}`)
+      fetch(`https://backend-flame-nine.vercel.app/qlnt/hoadon/ct/${data.soHoaDon}`)
         .then((response) => response.json())
         .then((data) => {
           for (let i = 0; i < data.length; i++) {

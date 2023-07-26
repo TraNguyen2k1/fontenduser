@@ -11,7 +11,7 @@ function hienDSKhachHang() {
 
 
     $.ajax({
-        url: `https://fontenduser.vercel.app/qlnt/khach/`,
+        url: `https://backend-flame-nine.vercel.app/qlnt/khach/`,
         method: "GET",
         dataType: "json",
         success: function (data) {

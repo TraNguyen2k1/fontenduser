@@ -6,7 +6,7 @@ function hienThiTaiKhoan() {
 
   const queryString = new URLSearchParams(params).toString();
   console.log(queryString);
-  fetch(`https://fontenduser.vercel.app/qlnt/user/?${queryString}`)
+  fetch(`https://backend-flame-nine.vercel.app/qlnt/user/?${queryString}`)
     .then((response) => response.json())
     .then((data) => {
       const tableBody = document.getElementById("table-taikhoan");

@@ -15,7 +15,7 @@ function hienDSThuocTrongKho() {
   $(document).ready(function () {
     let table = $("#example3").DataTable({
       ajax: {
-        url: `https://fontenduser.vercel.app/qlnt/kho/cn/${cn}`,
+        url: `https://backend-flame-nine.vercel.app/qlnt/kho/cn/${cn}`,
         dataSrc: "",
       },
       columns: [
@@ -138,7 +138,7 @@ function myFunction(name) {
   //  console.log(inputtbd);
   input.addEventListener("change", function () {
     const value = input.value;
-    fetch(`https://fontenduser.vercel.app/qlnt/thuoc/`)
+    fetch(`https://backend-flame-nine.vercel.app/qlnt/thuoc/`)
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
@@ -157,7 +157,7 @@ function myFunction(name) {
   input.addEventListener("input", function () {
     const value = input.value;
     console.log(value);
-    fetch(`https://fontenduser.vercel.app/qlnt/thuoc/`)
+    fetch(`https://backend-flame-nine.vercel.app/qlnt/thuoc/`)
       .then((response) => response.json())
       .then((data) => {
         let options = "";
