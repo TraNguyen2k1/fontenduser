@@ -1,7 +1,7 @@
 function hienDSThuocPX() {
   const cn = sessionStorage.getItem("cn");
   $.ajax({
-    url: `http://localhost:3000/qlnt/phieuxuat/${cn}`,
+    url: `https://fontenduser.vercel.app/qlnt/phieuxuat/${cn}`,
     method: "GET",
     dataType: "json",
     success: function (data) {
@@ -160,7 +160,7 @@ function hienDSThuocPX() {
           tableBody.innerHTML = "";
           const sophieu = this.querySelector("td:first-child").textContent;
           console.log(cn);
-          fetch(`http://localhost:3000/qlnt/phieuxuat/ct/${cn}/${sophieu}`)
+          fetch(`https://fontenduser.vercel.app/qlnt/phieuxuat/ct/${cn}/${sophieu}`)
             .then((response) => response.json())
             .then((data) => {
               for (let i = 0; i < data.length; i++) {
@@ -290,7 +290,7 @@ function myFunctionpx(name) {
     const ngayHetHan = parts[1]?.trim();
     input.value = maSKU;
 
-    fetch(`http://localhost:3000/qlnt/kho/${cn}`)
+    fetch(`https://fontenduser.vercel.app/qlnt/kho/${cn}`)
       .then((response) => response.json())
       .then((data) => {
         var found = false;
@@ -324,7 +324,7 @@ function myFunctionpx(name) {
       .catch((error) => console.error(error));
   });
   //
-  fetch(`http://localhost:3000/qlnt/kho/${cn}`)
+  fetch(`https://fontenduser.vercel.app/qlnt/kho/${cn}`)
       .then((response) => response.json())
       .then((data) => {
         let options = "";
@@ -355,7 +355,7 @@ function sukiensoLo(name) {
   console.log("ddddddddddddddd");
   console.log(options);
   var maskusl = input.getAttribute("masku");
-  fetch(`http://localhost:3000/qlnt/kho/sl/${maskusl}`)
+  fetch(`https://fontenduser.vercel.app/qlnt/kho/sl/${maskusl}`)
     .then((response) => response.json())
     .then((data) => {
       console.log(data);
@@ -458,7 +458,7 @@ function addPhieuXuat() {
     });
     // //
     if (flag == true) {
-      fetch("http://localhost:3000/qlnt/phieuxuat/addPX", {
+      fetch("https://fontenduser.vercel.app/qlnt/phieuxuat/addPX", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

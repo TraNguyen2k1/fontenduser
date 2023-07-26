@@ -22,7 +22,7 @@ function addkhachHang() {
       
       console.log(Khachhang);
     
-        fetch("http://localhost:3000/qlnt/khach/addKhach", {
+        fetch("https://fontenduser.vercel.app/qlnt/khach/addKhach", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

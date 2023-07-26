@@ -10,7 +10,7 @@ function hienFormThuocHetHan() {
   function hiendsGHH(){
     const cn = sessionStorage.getItem("cn");
     $.ajax({
-      url: `http://localhost:3000/qlnt/kho/ghh/${cn}`,
+      url: `https://fontenduser.vercel.app/qlnt/kho/ghh/${cn}`,
       method: "GET",
       dataType: "json",
       success: function (data) {

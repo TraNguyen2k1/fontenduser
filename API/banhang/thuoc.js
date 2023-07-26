@@ -13,7 +13,7 @@ function timThuoc() {
     hienThiTatCaBanHang()
   }
   if (selectedValue == "tenbietduoc") {
-    fetch(`http://localhost:3000/qlnt/thuoc/tbd/${cn}/${inputtk.value}`)
+    fetch(`https://fontenduser.vercel.app/qlnt/thuoc/tbd/${cn}/${inputtk.value}`)
       .then(function (response) {
         if (!response.ok) {
           throw Error(response.statusText);
@@ -37,7 +37,7 @@ function timThuoc() {
         console.log(error);
       });
   } else if (selectedValue == "hoatchat") {
-    fetch(`http://localhost:3000/qlnt/thuoc/hc/${cn}/${inputtk.value}`)
+    fetch(`https://fontenduser.vercel.app/qlnt/thuoc/hc/${cn}/${inputtk.value}`)
       .then(function (response) {
         if (!response.ok) {
           throw Error(response.statusText);
@@ -61,7 +61,7 @@ function timThuoc() {
         console.log(error);
       });
   } else if (selectedValue == "nhomthuoc") {
-    fetch(`http://localhost:3000/qlnt/thuoc/nt/${cn}/${inputtk.value}`)
+    fetch(`https://fontenduser.vercel.app/qlnt/thuoc/nt/${cn}/${inputtk.value}`)
       .then(function (response) {
         if (!response.ok) {
           throw Error(response.statusText);

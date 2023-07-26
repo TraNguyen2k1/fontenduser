@@ -7,7 +7,7 @@ function hienThiBaoCao() {
   const tennvElement = document.getElementById("tennv");
   tennvElement.innerText = nv[0];
     $.ajax({
-        url: `http://localhost:3000/qlnt/baocao/${cn}`,
+        url: `https://fontenduser.vercel.app/qlnt/baocao/${cn}`,
         method: "GET",
         dataType: "json",
         success: function (data) {
@@ -214,7 +214,7 @@ hienThiBaoCao()
     };
     console.log(JSON.stringify(data));
     // Gửi dữ liệu bằng AJAX
-    fetch("http://localhost:3000/qlnt/baocao/ngay/", {
+    fetch("https://fontenduser.vercel.app/qlnt/baocao/ngay/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
