@@ -32,7 +32,7 @@ function addkhachHang() {
           .then((response) => {
             if (response.ok) {
               alert("lưu thành công");
-  
+              location.reload();
             } else {
               alert("lưu  thất bại");
             }
